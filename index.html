@@ -3,19 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>올빌건축 | Allvill Architecture | 전원주택 설계 및 시공</title>
-    <meta name="description" content="경기도 양평 14년 전원 생활 노하우. 따뜻하고 아름다운 프리미엄 주택을 건축/분양하는 기업 올빌건축입니다. 가올, 나올, 다올, 라올 마을 조성 중.">
-    <!-- Google Fonts -->
+    <title>올빌건축 | Allvill Architecture | Space Producer</title>
+    <meta name="description" content="경기도 양평에서 쌓아온 전원 생활 노하우. 집과 마을, 실내와 디테일까지 하나의 공간 경험으로 기획하고 제작하는 올빌건축입니다.">
+    <meta name="theme-color" content="#0a0a0a">
+    <link rel="preload" as="image" href="img/optimized/hero-village.jpg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <!-- Local CSS -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header class="navbar">
-        <div class="logo">ALLVILL ARCHITECTURE</div>
-        <nav>
+        <a class="logo" href="#hero" aria-label="Allvill Architecture 홈">ALLVILL ARCHITECTURE</a>
+        <nav aria-label="주요 메뉴">
             <ul>
                 <li><a href="#about">About</a></li>
                 <li><a href="#projects">Villages</a></li>
@@ -26,98 +26,191 @@
     </header>
 
     <main>
-        <!-- Hero Section -->
         <section id="hero" class="hero-section">
+            <div class="hero-media" aria-hidden="true">
+                <img class="hero-bg is-active" src="img/optimized/hero-village.jpg" alt="">
+                <img class="hero-bg" src="img/optimized/hero-white-village.jpg" alt="">
+                <img class="hero-bg" src="img/optimized/hero-plan.jpg" alt="">
+            </div>
+            <div class="hero-overlay"></div>
+
             <div class="hero-content fade-in">
+                <p class="hero-kicker">Space Producer in Yangpyeong</p>
                 <h1 class="hero-title">ALLVILL<br>ARCHITECTURE</h1>
-                <p class="hero-subtitle">따뜻하고 아름다운 프리미엄 주택의 기준</p>
-                <div class="scroll-down">
-                    <span>Scroll</span>
-                    <div class="line"></div>
+                <p class="hero-subtitle">집과 마을, 실내와 디테일까지 하나의 삶으로 제작합니다</p>
+                <div class="hero-actions">
+                    <a href="#portfolio" class="btn-primary">Explore Works</a>
+                    <a href="#contact" class="btn-ghost">Contact</a>
                 </div>
             </div>
-            <!-- Background Image Overlay for Chic Black vibe -->
-            <div class="hero-overlay"></div>
-            <img class="hero-bg" src="https://scontent-icn2-1.cdninstagram.com/v/t51.82787-15/657673239_17986238567967018_6459773500790488511_n.jpg?stp=dst-jpegr_e35_p1080x1080_tt6&_nc_cat=107&ccb=7-5&_nc_sid=58cdad&_nc_ohc=m05z9bOGbUMQ7kNvwGtXmyB&_nc_oc=AdrVXJkPU5TxMSpf8n3oiJP6asiBnq5HHZeKLNBoX0Ek7ZIncjelTjOKo768VGvVZiQ&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=cnQqE5K3TOMSAkBQdsWNzA&oh=00_Afwyngkc6tdRf1o7UFO40tXn7ofzmkWhfWPNtLzS_Qs-Mw&oe=69CE7B4F" alt="Allvill Architecture Hero">
+
+            <div class="hero-status" aria-label="히어로 이미지 슬라이드">
+                <span class="hero-number"><span data-hero-current>01</span> / 03</span>
+                <div class="hero-dots">
+                    <button class="hero-dot is-active" type="button" data-hero-dot="0" aria-label="첫 번째 이미지"></button>
+                    <button class="hero-dot" type="button" data-hero-dot="1" aria-label="두 번째 이미지"></button>
+                    <button class="hero-dot" type="button" data-hero-dot="2" aria-label="세 번째 이미지"></button>
+                </div>
+            </div>
+
+            <div class="scroll-down" aria-hidden="true">
+                <span>Scroll</span>
+                <div class="line"></div>
+            </div>
         </section>
 
-        <!-- About Section -->
         <section id="about" class="about-section slide-up">
             <div class="about-container">
                 <div class="about-text">
-                    <h2 class="section-title">14 Years of Expertise</h2>
-                    <p>경기도 양평에서의 14년 전원 생활 노하우를 바탕으로, 단순한 집을 넘어 당신의 라이프스타일이 담긴 따뜻하고 아름다운 <strong>프리미엄 주택</strong>을 건축하고 분양합니다.</p>
+                    <p class="section-kicker">About Allvill</p>
+                    <h2 class="section-title">Space Producer</h2>
+                    <p>올빌은 단순히 집을 짓거나 실내를 꾸미는 곳을 넘어, 양평의 자연과 생활 리듬에 맞춘 공간을 기획하고 설계하며 완성하는 <strong>공간 제작자</strong>입니다.</p>
+                    <div class="producer-note">
+                        <span>From Life to Space</span>
+                        <p>라이프스타일의 방향을 읽고, 집과 마을, 실내와 디테일까지 하나의 공간 경험으로 제작합니다.</p>
+                    </div>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <h3><span data-count data-start-year="2011">0</span>+</h3>
+                            <p>Years Experience</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3><span data-count="4">0</span></h3>
+                            <p>Village Projects</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>A-Z</h3>
+                            <p>Space Production</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="about-stats">
-                    <div class="stat-item">
-                        <h3>14+</h3>
-                        <p>Years Experience</p>
-                    </div>
-                    <div class="stat-item">
-                        <h3>Premium</h3>
-                        <p>Architecture & Interior</p>
-                    </div>
+                <div class="about-media" aria-label="올빌건축 공간 이미지">
+                    <img class="about-img-main" src="img/optimized/portfolio-living.jpg" alt="밝은 거실과 계단이 있는 올빌건축 공간">
+                    <img class="about-img-floating" src="img/optimized/portfolio-light-detail.jpg" alt="올빌건축 조명 디테일">
                 </div>
             </div>
         </section>
 
-        <!-- Projects / Villages -->
         <section id="projects" class="villages-section slide-up">
-            <h2 class="section-title center">The Villages</h2>
-            <p class="section-desc center">올빌건축이 만들어가는 새로운 마을들</p>
+            <div class="section-head center">
+                <p class="section-kicker">The Villages</p>
+                <h2 class="section-title center">The Villages</h2>
+                <p class="section-desc center">올빌건축이 만들어가는 새로운 마을들</p>
+            </div>
             <div class="villages-grid">
-                <div class="village-card">
+                <article class="village-card" style="--village-image: url('img/optimized/village-gaol.jpg');">
                     <div class="v-card-inner">
+                        <span class="village-index">01</span>
                         <h3>가올</h3>
                         <p>첫 번째 발걸음,<br>시작을 알리는 올빌의 첫 마을</p>
                     </div>
-                </div>
-                <div class="village-card">
+                </article>
+                <article class="village-card" style="--village-image: url('img/optimized/village-naol.jpg');">
                     <div class="v-card-inner">
+                        <span class="village-index">02</span>
                         <h3>나올</h3>
                         <p>두 번째 마을,<br>자연 속에서 피어나는 여유</p>
                     </div>
-                </div>
-                <div class="village-card">
+                </article>
+                <article class="village-card" style="--village-image: url('img/optimized/village-daol.jpg');">
                     <div class="v-card-inner">
+                        <span class="village-index">03</span>
                         <h3>다올</h3>
                         <p>세 번째 마을,<br>모두 다 함께 어우러지는 공간</p>
                     </div>
-                </div>
-                <div class="village-card">
+                </article>
+                <article class="village-card" style="--village-image: url('img/optimized/village-laol.jpg');">
                     <div class="v-card-inner">
+                        <span class="village-index">04</span>
                         <h3>라올</h3>
                         <p>네 번째 마을,<br>당신의 아름다운 삶이 즐거운 곳</p>
                     </div>
-                </div>
+                </article>
             </div>
         </section>
 
-        <!-- Dynamic Portfolio / Instagram Extracted Images -->
+        <section class="image-river" aria-label="올빌건축 이미지 흐름">
+            <div class="image-river-track">
+                <img src="img/optimized/portfolio-dining-bright.jpg" alt="대리석 식탁이 있는 주방과 다이닝룸">
+                <img src="img/optimized/portfolio-brick-front.jpg" alt="벽돌 외관 주택 정면">
+                <img src="img/optimized/portfolio-kids.jpg" alt="파스텔 컬러 아이방과 복층 계단">
+                <img src="img/optimized/portfolio-white-house.jpg" alt="화이트 벽돌 주택 외관">
+                <img src="img/optimized/portfolio-table-top.jpg" alt="복층에서 내려다본 다이닝 공간">
+                <img src="img/optimized/portfolio-dining-dark.jpg" alt="올빌건축 쇼룸 다이닝 공간">
+                <img src="img/optimized/portfolio-dining-bright.jpg" alt="" aria-hidden="true">
+                <img src="img/optimized/portfolio-brick-front.jpg" alt="" aria-hidden="true">
+                <img src="img/optimized/portfolio-kids.jpg" alt="" aria-hidden="true">
+                <img src="img/optimized/portfolio-white-house.jpg" alt="" aria-hidden="true">
+                <img src="img/optimized/portfolio-table-top.jpg" alt="" aria-hidden="true">
+                <img src="img/optimized/portfolio-dining-dark.jpg" alt="" aria-hidden="true">
+            </div>
+        </section>
+
         <section id="portfolio" class="portfolio-section slide-up">
-            <h2 class="section-title center">Our Portfolio</h2>
-            <div class="portfolio-grid">
-                <div class="portfolio-item">
-                    <img src="https://scontent-icn2-1.cdninstagram.com/v/t51.82787-15/638281345_17981702294967018_5457454904545605577_n.jpg?stp=dst-jpegr_e35_p1080x1080_tt6&_nc_cat=110&ccb=7-5&_nc_sid=58cdad&_nc_ohc=2LMZ_WVWGlMQ7kNvwFXVTjG&_nc_oc=Ado9KktTiqp4wSzLKhV7FRgppc72SovUIFDGBacLle0MSpu6prA8tSjMbr3F1kVWbYQ&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=cnQqE5K3TOMSAkBQdsWNzA&oh=00_Afx9jdyVjVnsFFBcJs0Men3E8ph6C3MzIGdJiWVVqouVWw&oe=69CE6DEF" alt="Interior Portfolio 1">
-                </div>
-                <div class="portfolio-item">
-                    <img src="https://scontent-icn2-1.cdninstagram.com/v/t51.82787-15/649234501_17983594415967018_6018511909684915016_n.jpg?stp=dst-jpegr_e35_p1080x1080_tt6&_nc_cat=104&ccb=7-5&_nc_sid=58cdad&_nc_ohc=qeVfk97y_LUQ7kNvwH6bHBL&_nc_oc=AdrpU-2fxHBOA-_pMAP2PhTX-TxTVcXkpzeTfEupHB6kk60lU7S97thAAFFTzYH719k&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=cnQqE5K3TOMSAkBQdsWNzA&oh=00_AfzAKigBGMLsdtzKoec2BRYDkv6ILo1KEBxQNVslYx5koQ&oe=69CE6665" alt="Interior Portfolio 2">
-                </div>
+            <div class="section-head center">
+                <p class="section-kicker">Our Portfolio</p>
+                <h2 class="section-title center">Our Portfolio</h2>
+                <p class="section-desc center">외관, 실내, 디테일까지 하나의 공간 경험으로 완성합니다</p>
             </div>
-            <div class="center" style="margin-top: 2rem;">
-                <a href="https://www.instagram.com/allvill_official" target="_blank" class="btn-primary">View More on Instagram</a>
+            <div class="portfolio-mosaic">
+                <article class="portfolio-item portfolio-wide">
+                    <img src="img/optimized/portfolio-brick-front.jpg" alt="벽돌 외관 주택 정면">
+                    <div class="portfolio-copy">
+                        <span>Exterior</span>
+                        <h3>Brick Village</h3>
+                    </div>
+                </article>
+                <article class="portfolio-item portfolio-tall">
+                    <img src="img/optimized/portfolio-table-top.jpg" alt="복층에서 내려다본 다이닝 공간">
+                    <div class="portfolio-copy">
+                        <span>Space</span>
+                        <h3>Double Height Dining</h3>
+                    </div>
+                </article>
+                <article class="portfolio-item">
+                    <img src="img/optimized/portfolio-dining-bright.jpg" alt="밝은 주방과 다이닝룸">
+                    <div class="portfolio-copy">
+                        <span>Kitchen</span>
+                        <h3>Warm Marble</h3>
+                    </div>
+                </article>
+                <article class="portfolio-item">
+                    <img src="img/optimized/portfolio-living.jpg" alt="거실과 계단이 연결된 실내 공간">
+                    <div class="portfolio-copy">
+                        <span>Living</span>
+                        <h3>Soft Modern</h3>
+                    </div>
+                </article>
+                <article class="portfolio-item portfolio-wide">
+                    <img src="img/optimized/portfolio-white-house.jpg" alt="화이트 벽돌 주택 외관과 정원">
+                    <div class="portfolio-copy">
+                        <span>Landscape</span>
+                        <h3>Private Garden</h3>
+                    </div>
+                </article>
+                <article class="portfolio-item">
+                    <img src="img/optimized/portfolio-kids.jpg" alt="파스텔 컬러 아이방과 복층 계단">
+                    <div class="portfolio-copy">
+                        <span>Room</span>
+                        <h3>Cozy House</h3>
+                    </div>
+                </article>
+            </div>
+            <div class="portfolio-cta center">
+                <a href="https://www.instagram.com/allvill_official" target="_blank" rel="noreferrer" class="btn-primary">View More on Instagram</a>
             </div>
         </section>
 
-        <!-- Contact Section -->
         <section id="contact" class="contact-section slide-up">
-            <h2 class="section-title">Contact Us</h2>
-            <div class="contact-info">
-                <p>프리미엄 주택 건축 및 분양 문의</p>
-                <ul>
-                    <li><strong>Instagram:</strong> <a href="https://www.instagram.com/allvill_official" target="_blank">@allvill_official</a></li>
-                    <li><strong>Email:</strong> info@allvill.com</li>
-                    <li><strong>Location:</strong> 경기도 양평</li>
+            <div class="contact-container">
+                <div class="contact-copy">
+                    <p class="section-kicker">Contact Us</p>
+                    <h2 class="section-title">Contact Us</h2>
+                    <p>공간 제작, 프리미엄 주택 건축 및 분양 문의는 Instagram DM으로 연결해 주세요.</p>
+                </div>
+                <ul class="contact-info">
+                    <li><strong>Instagram</strong><a href="https://www.instagram.com/allvill_official" target="_blank" rel="noreferrer">@allvill_official</a></li>
+                    <li><strong>Location</strong><span>경기도 양평</span></li>
                 </ul>
             </div>
         </section>
@@ -125,11 +218,10 @@
 
     <footer>
         <div class="footer-content">
-            <p>&copy; 2024 Allvill Architecture. All rights reserved.</p>
+            <p>&copy; 2026 Allvill Architecture. All rights reserved.</p>
         </div>
     </footer>
 
-    <!-- Local JS -->
     <script src="script.js"></script>
 </body>
 </html>
